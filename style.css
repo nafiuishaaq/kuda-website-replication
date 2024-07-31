@@ -648,16 +648,69 @@ nav {
     .left-fourth {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 1.5rem;
       padding: 4rem;
+
+      h1 {
+        color: var(--primary-color);
+        font-weight: 900;
+      }
+
+      p {
+        font-size: 0.875rem;
+        font-weight: 500;
+      }
+
+      a {
+        width: 43%;
+        text-decoration: none;
+        padding: 0.8rem 1.5625rem;
+        border-radius: 0.625rem;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        text-align: center;
+        font-size: 12px;
+      }
     }
 
     .right-fourth {
-      /* width: 50%; */
+      display: flex;
+      align-items: last baseline;
 
       img {
-        width: 25rem;
+        width: 30rem;
+        padding: 2rem 4rem 0 2rem;
       }
+    }
+  }
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  padding: 4rem 7rem;
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    width: 6rem;
+    height: 1.5rem;
+  }
+
+  .footer-link {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    p {
+      font-size: 1rem;
+      color: var(--primary-color);
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 12px;
+      font-weight: 500;
     }
   }
 }
