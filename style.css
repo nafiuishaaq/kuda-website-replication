@@ -87,6 +87,10 @@ nav {
         border-radius: 0.3125rem;
       }
     }
+
+    i {
+      display: none;
+    }
   }
 }
 
@@ -554,10 +558,106 @@ nav {
   table {
     width: 70%;
     text-align: left;
-    border: 1px solid red;
-    padding: 3rem 5rem;
-    thead {
-      background-color: red;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-collapse: collapse;
+
+    thead th {
+      /* background-color: red; */
+      padding: 2rem 4rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    tbody td {
+      /* background-color: red; */
+      padding: 1rem 3rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .table-icon {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 0.2rem;
+    }
+  }
+}
+
+.section-thirt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  .card-kuda {
+    width: 18rem;
+    height: 18rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 4px;
+    box-shadow: 10px 10px 10px 10px rgba(203, 196, 196, 0.2);
+    background-color: var(--secondary-color);
+
+    .circle-icon {
+      background-color: #ccc;
+      width: 1.8rem;
+      height: 1.8rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      color: var(--primary-color);
+    }
+
+    h1 {
+      color: var(--primary-color);
+      font-size: 1.5rem;
+      font-weight: 900;
+    }
+
+    p {
+      font-size: 15px;
+      font-weight: 450;
+      line-height: 23px;
+    }
+
+    .caret {
+      display: flex;
+      gap: 0.5rem;
+
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.section-fourth {
+  margin: 7rem 11.5rem;
+
+  .card-large {
+    background-color: #ebeffb;
+    display: flex;
+    gap: 1rem;
+    border-radius: 0.3125rem;
+
+    .left-fourth {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 4rem;
+    }
+
+    .right-fourth {
+      /* width: 50%; */
+
+      img {
+        width: 25rem;
+      }
     }
   }
 }
@@ -583,6 +683,10 @@ nav {
       a {
         display: none;
       }
+    }
+
+    i {
+      display: block !important;
     }
   }
 
@@ -752,6 +856,136 @@ nav {
       img {
         width: 25rem;
         padding-right: 1.5rem;
+      }
+    }
+  }
+
+  .section-six {
+    padding: 5rem 1rem 0 1rem;
+    flex-direction: column-reverse;
+    gap: 2rem;
+
+    .left-six {
+      width: 100%;
+
+      img {
+        width: 25rem;
+      }
+    }
+
+    .right-six {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  .section-seven {
+    padding: 5rem 1rem 0 1rem;
+    flex-direction: column;
+    gap: 3rem;
+
+    .left-seven {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+
+    .right-seven {
+      width: 100%;
+
+      img {
+        width: 25rem;
+        padding-right: 2rem;
+      }
+    }
+  }
+
+  .section-eight {
+    padding: 5rem 1rem 0 1rem;
+    flex-direction: column-reverse;
+    gap: 2rem;
+
+    .left-eight {
+      width: 100%;
+
+      img {
+        width: 18rem;
+        height: 17rem;
+      }
+    }
+
+    .right-eight {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      fle h1 {
+      }
+    }
+  }
+
+  .center-text {
+    padding: 5rem 1rem 3rem 1rem;
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .section-nine {
+    .testinial-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 10px;
+      width: 10rem;
+      height: 14rem;
+      background-color: var(--secondary-color);
+      border-radius: 5px;
+      box-shadow: 10px 10px 10px 10px rgba(135, 133, 133, 0.1);
+
+      p {
+        font-size: 0.5rem;
+        padding: 1.25rem;
+        color: balck;
+        font-weight: 400;
+        text-align: justify;
+        line-height: 20px;
+      }
+
+      .testimonial-img {
+        padding: 1.25rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        img {
+          width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+          margin: 0 10px 0 0;
+        }
+
+        span {
+          font-size: 8px;
+          font-weight: 900;
+        }
       }
     }
   }
