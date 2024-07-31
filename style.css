@@ -159,14 +159,22 @@ nav {
 
   .right-one {
     width: 40%;
-    padding: 4rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 0 3rem;
+
+    img {
+      width: 30rem;
+    }
+    /* padding: 4rem 4rem;
     margin-top: 80px;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 
-    .circle-one {
+    /* .circle-one {
       border-radius: 50%;
       border: 1px solid #969595f6;
       width: 400px;
@@ -188,7 +196,7 @@ nav {
       width: 200px;
       height: 200px;
       position: absolute;
-    }
+    } */
   }
 }
 
@@ -536,5 +544,215 @@ nav {
     align-items: center;
     gap: 3.5rem;
     padding-bottom: 4rem;
+  }
+}
+
+.section-twelve {
+  display: flex;
+  justify-content: center;
+
+  table {
+    width: 70%;
+    text-align: left;
+    border: 1px solid red;
+    padding: 3rem 5rem;
+    thead {
+      background-color: red;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    padding: 1rem;
+
+    .left {
+      gap: 2rem;
+
+      ul {
+        display: none;
+      }
+
+      a {
+        display: none;
+      }
+    }
+
+    .right {
+      gap: 1rem;
+      a {
+        display: none;
+      }
+    }
+  }
+
+  .section-one {
+    flex-direction: column;
+    gap: 1rem;
+
+    .left-one {
+      width: 100%;
+      padding: 4rem 1rem 2rem 1rem;
+      gap: 1rem;
+
+      h1 {
+        font-weight: 900 !important;
+        text-align: center;
+        font-size: 35px !important;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      .app-image {
+        justify-content: center;
+        align-items: center;
+        padding-top: 1.25rem;
+      }
+    }
+
+    .right-one {
+      width: 100% !important;
+      padding: 0 !important;
+
+      img {
+        width: 23rem !important;
+      }
+    }
+  }
+
+  .section-two {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .top-cards {
+      flex-direction: column;
+    }
+
+    .card {
+      width: 350px;
+      height: 80px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: 100px;
+      gap: 0.8rem;
+
+      .icon {
+        width: 60px;
+        height: 40px;
+        background-color: rgb(239, 251, 255);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      i {
+        color: #40196d;
+        font-size: 16px;
+      }
+
+      p {
+        padding-top: 0;
+        font-weight: 900;
+      }
+    }
+
+    .bottom-cards {
+      flex-direction: column;
+    }
+  }
+
+  .section-three {
+    padding: 5rem 1rem 0 1rem;
+    flex-direction: column;
+    gap: 3rem;
+
+    .left-three {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        width: 60%;
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+
+    .right-three {
+      width: 100%;
+
+      img {
+        width: 26rem;
+        padding-right: 2rem;
+      }
+    }
+  }
+
+  .section-four {
+    padding: 5rem 1rem 0 1rem;
+    flex-direction: column-reverse;
+
+    .left-four {
+      width: 100% !important;
+
+      img {
+        width: 25rem !important;
+        padding-top: 4rem;
+        padding-left: 1rem;
+      }
+    }
+
+    .right-four {
+      width: 100% !important;
+
+      h1 {
+        width: 100%;
+        text-align: center !important;
+        font-size: 1.8rem !important;
+      }
+
+      p {
+        text-align: center;
+        font-size: 0.9rem !important;
+      }
+    }
+  }
+
+  .section-five {
+    padding: 5rem 1rem 0 1rem;
+    flex-direction: column;
+    gap: 3rem;
+
+    .left-five {
+      width: 100%;
+      text-align: center;
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+
+    .right-five {
+      width: 100%;
+
+      img {
+        width: 25rem;
+        padding-right: 1.5rem;
+      }
+    }
   }
 }
