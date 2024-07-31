@@ -686,31 +686,106 @@ nav {
 }
 
 footer {
-  border-top: 1px solid #ccc;
-  padding: 4rem 7rem;
-  display: flex;
-  justify-content: space-between;
-
-  img {
-    width: 6rem;
-    height: 1.5rem;
-  }
-
-  .footer-link {
+  .footer-top {
+    border-top: 1px solid #ccc;
+    padding: 4rem 7rem;
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    justify-content: space-between;
 
-    p {
-      font-size: 1rem;
-      color: var(--primary-color);
+    img {
+      width: 6rem;
+      height: 1.5rem;
     }
 
-    a {
-      text-decoration: none;
-      color: black;
-      font-size: 12px;
-      font-weight: 500;
+    .footer-link {
+      display: flex;
+      flex-direction: column;
+      gap: 1.3rem;
+
+      p {
+        font-size: 0.9rem;
+        color: var(--primary-color);
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .app-link {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 7rem;
+  }
+
+  span {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 12px;
+    color: #ccc;
+  }
+
+  .address {
+    display: flex;
+    padding: 4rem 7rem;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .address-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+
+      h3 {
+        font-size: 0.875rem;
+        color: var(--primary-color);
+      }
+
+      a {
+        font-size: 14px;
+      }
+
+      p {
+        font-size: 12px;
+        font-weight: 400;
+      }
+
+      .social {
+        display: flex;
+        gap: 1.3rem;
+
+        .social-icon {
+          width: 28px;
+          height: 28px;
+          border: 1px solid var(--primary-color);
+          background-color: #ebeffb;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: var(--primary-color);
+        }
+        i {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .copyright {
+    padding: 0 7rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 0.68rem;
+
+    p {
+      color: #ccc;
     }
   }
 }
