@@ -30,21 +30,26 @@
     <nav>
       <div class="left">
         <img src="images/kuda-logo.png" alt="" />
-        <ul>
+        <ul class="active" id="list">
           <li>
-            <a href="#"
-              >Personal
-              <i class="fa-solid fa-caret-down"></i>
-            </a>
+            <a href="#">Personal </a>
+            <i class="fa-solid fa-caret-down"></i>
+            <i class="fa-solid fa-caret-right"></i>
           </li>
           <li>
-            <a href="#">Business <i class="fa-solid fa-caret-down"></i></a>
+            <a href="#">Business </a>
+            <i class="fa-solid fa-caret-down"></i>
+            <i class="fa-solid fa-caret-right"></i>
           </li>
           <li>
-            <a href="#">Company <i class="fa-solid fa-caret-down"></i></a>
+            <a href="#">Company</a>
+            <i class="fa-solid fa-caret-down"></i>
+            <i class="fa-solid fa-caret-right"></i>
           </li>
           <li>
-            <a href="#">Help <i class="fa-solid fa-caret-down"></i></a>
+            <a href="#">Help </a>
+            <i class="fa-solid fa-caret-down"></i>
+            <i class="fa-solid fa-caret-right"></i>
           </li>
         </ul>
       </div>
@@ -55,7 +60,7 @@
         <div class="circle">
           <img src="images/ng-flag.jpeg" alt="" />
         </div>
-        <i class="fa-sharp-duotone fa-solid fa-bars"></i>
+        <i class="fa-sharp-duotone fa-solid fa-bars" id="hamburger"></i>
       </div>
     </nav>
 
@@ -489,6 +494,10 @@
           <h1>The money app for Africans.</h1>
           <p>Save, spend, send and invest money across borders.</p>
           <a href="#">Join Kuda</a>
+          <div class="app-store">
+            <img src="images/app.png" alt="app store logo" />
+            <img src="images/play.png" alt="play store logo" />
+          </div>
         </div>
 
         <div class="right-fourth">
@@ -498,160 +507,166 @@
     </div>
 
     <footer>
-      <div class="footer-top">
+      <div class="flex-me">
         <img src="images/kuda-logo.png" alt="" />
 
-        <div class="footer-link">
-          <p>Personal</p>
-          <a href="#">Discover Personal</a>
-          <a href="#">Transfer & Spend</a>
-          <a href="#">Save</a>
-          <a href="#">Investments</a>
-          <a href="#">Kuda card</a>
-        </div>
+        <div class="footer-top">
+          <div class="footer-link">
+            <p>Personal</p>
+            <a href="#">Discover Personal</a>
+            <a href="#">Transfer & Spend</a>
+            <a href="#">Save</a>
+            <a href="#">Investments</a>
+            <a href="#">Kuda card</a>
+          </div>
 
-        <div class="footer-link">
-          <p>Business</p>
-          <a href="#">Discover Business</a>
-          <a href="#">Business Registration</a>
-          <a href="#">softPOS</a>
-          <a href="#">Invoicing</a>
-          <a href="#">Salary Loan</a>
-          <a href="#">Business API</a>
-          <a href="#">Join Kuda Business</a>
-        </div>
+          <div class="footer-link">
+            <p>Business</p>
+            <a href="#">Discover Business</a>
+            <a href="#">Business Registration</a>
+            <a href="#">softPOS</a>
+            <a href="#">Invoicing</a>
+            <a href="#">Salary Loan</a>
+            <a href="#">Business API</a>
+            <a href="#">Join Kuda Business</a>
+          </div>
 
-        <div class="footer-link">
-          <p>Company</p>
-          <a href="#">Blog</a>
-          <a href="#">Press</a>
-          <a href="#">Join Our Team</a>
-          <a href="#">About Us</a>
-        </div>
+          <div class="footer-link">
+            <p>Company</p>
+            <a href="#">Blog</a>
+            <a href="#">Press</a>
+            <a href="#">Join Our Team</a>
+            <a href="#">About Us</a>
+          </div>
 
-        <div class="footer-link">
-          <p>Help</p>
-          <a href="#">Get Help</a>
-          <a href="#">Scam Awareness</a>
-          <a href="#">FAQs</a>
-          <a href="#">Security</a>
-          <a href="#">Contact Us</a>
-          <a href="#">Self Help</a>
-        </div>
+          <div class="footer-link">
+            <p>Help</p>
+            <a href="#">Get Help</a>
+            <a href="#">Scam Awareness</a>
+            <a href="#">FAQs</a>
+            <a href="#">Security</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Self Help</a>
+          </div>
 
-        <div class="footer-link">
-          <p>Transparency</p>
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Information Security Policy</a>
-          <a href="#">Cookie Policy</a>
-          <a href="#">Whistleblowing Policy</a>
-        </div>
-      </div>
-
-      <div class="app-link">
-        <a href="#"><img src="images/app2.png" alt="" /></a>
-        <a href="#"><img src="images/plaay.png" alt="" /></a>
-        <a href="#"><img src="images/kuda.png" alt="" /></a>
-      </div>
-
-      <span>Products may vary by country or market.</span>
-
-      <div class="address">
-        <div class="address-link">
-          <h3>Contact</h3>
-          <a href="#">help@kuda.com</a>
-          <div class="social">
-            <div class="social-icon">
-              <i class="fa-brands fa-x-twitter"></i>
-            </div>
-            <div class="social-icon">
-              <i class="fa-brands fa-instagram"></i>
-            </div>
-            <div class="social-icon">
-              <i class="fa-brands fa-facebook-f"></i>
-            </div>
-            <div class="social-icon">
-              <i class="fa-brands fa-youtube"></i>
-            </div>
-            <div class="social-icon">
-              <i class="fa fa-m"></i>
-            </div>
-            <div class="social-icon">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </div>
+          <div class="footer-link">
+            <p>Transparency</p>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Information Security Policy</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Whistleblowing Policy</a>
           </div>
         </div>
-        <div class="address-link">
-          <h3>Lagos</h3>
-
-          <p>1-11 Commercial Avenue, Yaba, Lagos, Nigeria</p>
-        </div>
-
-        <div class="address-link">
-          <h3>London</h3>
-
-          <p>5 New Street Square, London, EC4A 3TW, United Kingdom</p>
-        </div>
-
-        <div class="address-link">
-          <h3>Cape Town</h3>
-
-          <p>
-            146 Campground Road, Snakepit Building, Level 4, Newlands, Cape Town
-          </p>
-        </div>
-
-        <div class="address-link">
-          <h3>Canada</h3>
-
-          <p>3080 Yonge Street, Suite 6060, Toronto, Ontario M4N 3N1</p>
-        </div>
       </div>
 
-      <div class="copyright">
-        <div class="copy1">
+      <div class="last-part">
+        <div class="app-link">
+          <a href="#"><img src="images/app2.png" alt="" /></a>
+          <a href="#"><img src="images/plaay.png" alt="" /></a>
+          <a href="#"><img src="images/kuda.png" alt="" /></a>
+        </div>
+        <span>Products may vary by country or market.</span>
+
+        <div class="address">
+          <div class="address-link-brand">
+            <h3>Contact</h3>
+            <a href="#">help@kuda.com</a>
+            <div class="social">
+              <div class="social-icon">
+                <i class="fa-brands fa-x-twitter"></i>
+              </div>
+              <div class="social-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="social-icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="social-icon">
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+              <div class="social-icon">
+                <i class="fa fa-m"></i>
+              </div>
+              <div class="social-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="address-link">
+            <h3>Lagos</h3>
+
+            <p>1-11 Commercial Avenue, Yaba, Lagos, Nigeria</p>
+          </div>
+
+          <div class="address-link">
+            <h3>London</h3>
+
+            <p>5 New Street Square, London, EC4A 3TW, United Kingdom</p>
+          </div>
+
+          <div class="address-link">
+            <h3>Cape Town</h3>
+
+            <p>
+              146 Campground Road, Snakepit Building, Level 4, Newlands, Cape
+              Town
+            </p>
+          </div>
+
+          <div class="address-link">
+            <h3>Canada</h3>
+
+            <p>3080 Yonge Street, Suite 6060, Toronto, Ontario M4N 3N1</p>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <div class="copy1">
+            <p>
+              *Kuda Customers get 25 free transfer to other banks every month.
+              Extra transfers to other banks cost ₦10 each.
+            </p>
+
+            <p>
+              **Kuda account holders can deposit money in over 10,000 branches
+              across Nigeria for free.
+            </p>
+          </div>
           <p>
-            *Kuda Customers get 25 free transfer to other banks every month.
-            Extra transfers to other banks cost ₦10 each.
+            © 2024 Kuda Technologies Ltd (Company No.11472232). All rights
+            reserved.
           </p>
 
           <p>
-            **Kuda account holders can deposit money in over 10,000 branches
-            across Nigeria for free.
+            If you would like to find out more about which Kuda entity you
+            receive services from, please reach out to us via the in-app chat in
+            the Kuda app. Nigerian banking services offered by Kuda Microfinance
+            Bank (RC796975) with registered address at 1-11 Commercial Avenue,
+            Yaba, Lagos, Nigeria. Kuda Microfinance Bank is licensed by the
+            Central Bank of Nigeria. Deposits are insured by the Nigerian
+            Deposit Insurance Corporation (NDIC).
+          </p>
+
+          <p>
+            UK services are offered by Kuda EMI Ltd (Company No. 13724208) with
+            registered address at 5 New Street Square, London, EC4A 3TW, United
+            Kingdom.
+          </p>
+
+          <p>
+            Canada services will be provided by Kuda Canada Technologies
+            Limited, an Ontario corporation registered under number 1000286176,
+            with its registered address located at 3080 Yonge Street, Suite
+            6060, Toronto, Ontario M4N 3N1. Kuda Canada Technologies Limited is
+            duly registered with The Financial Transactions and Reports Analysis
+            Centre of Canada (FINTRAC) as a money service business, bearing
+            registration number M23163015.
           </p>
         </div>
-        <p>
-          © 2024 Kuda Technologies Ltd (Company No.11472232). All rights
-          reserved.
-        </p>
-
-        <p>
-          If you would like to find out more about which Kuda entity you receive
-          services from, please reach out to us via the in-app chat in the Kuda
-          app. Nigerian banking services offered by Kuda Microfinance Bank
-          (RC796975) with registered address at 1-11 Commercial Avenue, Yaba,
-          Lagos, Nigeria. Kuda Microfinance Bank is licensed by the Central Bank
-          of Nigeria. Deposits are insured by the Nigerian Deposit Insurance
-          Corporation (NDIC).
-        </p>
-
-        <p>
-          UK services are offered by Kuda EMI Ltd (Company No. 13724208) with
-          registered address at 5 New Street Square, London, EC4A 3TW, United
-          Kingdom.
-        </p>
-
-        <p>
-          Canada services will be provided by Kuda Canada Technologies Limited,
-          an Ontario corporation registered under number 1000286176, with its
-          registered address located at 3080 Yonge Street, Suite 6060, Toronto,
-          Ontario M4N 3N1. Kuda Canada Technologies Limited is duly registered
-          with The Financial Transactions and Reports Analysis Centre of Canada
-          (FINTRAC) as a money service business, bearing registration number
-          M23163015.
-        </p>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
