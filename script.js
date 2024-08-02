@@ -3,15 +3,14 @@ const menulist = document.getElementById("list");
 const menuclose = document.getElementById("close");
 
 menu.addEventListener("click", function () {
-  menulist.classList.remove("active");
-  menu.classList.remove("fa-bars");
-  menu.classList.add("fa-close");
+  menulist.classList.toggle("active");
 
-  // closemenu();
+  // Toggle between the hamburger and close icons
+  if (menulist.classList.contains("active")) {
+    menu.classList.remove("fa-close");
+    menu.classList.add("fa-bars");
+  } else {
+    menu.classList.remove("fa-bars");
+    menu.classList.add("fa-close");
+  }
 });
-
-// function closemenu() {
-//   if (menu.classList === "fa-bars") {
-//     menu.classList.remove("fa-bars");
-//   }
-// }
