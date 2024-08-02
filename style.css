@@ -845,7 +845,7 @@ footer {
         flex-direction: column;
         background-color: var(--secondary-color);
         width: 100%;
-        height: 110vh;
+        height: 100vh;
         top: 3.5rem;
         left: 0;
         right: 0;
